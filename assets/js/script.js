@@ -28,14 +28,17 @@
 
 
 $(function(){
+  
 
-    $('.with-dropdown').on('click',function(){
-        var index = $(this).index();
-        
-        console.log(index);
-        $('.drop-down.active').removeClass('active');
-        $('.drop-down').eq(index).addClass('active');
-        
-    })
+    $('.with-dropdown').mouseenter(function(){
+      $('.drop_down.active').toggleClass('active');
+      $(this).find('.drop_down').toggleClass('active');
+    });
+  
 
-});
+    $('.with-dropdown').click(function(){
+      $(this).find('.drop_down').toggleClass('active');
+    });
+  
+  
+  });

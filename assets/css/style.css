@@ -101,7 +101,7 @@ header section{
     background-color: white;
 }
 
-.drop-down.active{
+.drop_down.active{
     display: flex;
 }
 
