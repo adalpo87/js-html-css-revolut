@@ -97,10 +97,13 @@ header section{
     box-shadow: 0px 1px 2px rgba(0, 0, 0, .3);
     border-radius: 7px;
     position: absolute;
+    display: none;
     background-color: white;
 }
 
-
+.drop-down.active{
+    display: flex;
+}
 
 /* ----------------- FUNZIONALITA' ----------------- */
 
@@ -109,17 +112,11 @@ header section{
     height: 300px;
     top: 50px;
     right: -535px;
-    display: none;
     justify-content: center;
 }
-
-.drop-funz.active{
-    display: flex;
-}
-   
+ 
 .box{
     flex-basis: calc(100% / 4);
-    border: 1px solid black;
     height: 100%;
 }
 
@@ -131,10 +128,6 @@ header section{
     right: 10px;
     display: none;
 }
-.drop-abb.active{
-    display: flex;
-}
-
 
 
 /* ----------------- Chi siamo ----------------- */
@@ -145,9 +138,6 @@ header section{
     left: -10px;
     display: none;
 }
-.drop-who.active{
-    display: flex;
-}
 
 /* ----------------- Aiuto ----------------- */
 .drop-help{
@@ -156,7 +146,4 @@ header section{
     top: 50px;
     left: -10px;
     display: none;
-}
-.drop-help.active{
-    display: flex;
 }

@@ -1,10 +1,14 @@
-$(function(){
+/* $(function(){
 
     //funzionalità
 	$('.funz').mouseenter(function(){
 		//$('.dropdown-menu').toggleClass('active');
 		$(this).find('.drop-funz').toggleClass('active');
 	});
+
+
+
+
     //abbonamenti
     $('.abb').mouseenter(function(){
 
@@ -20,4 +24,18 @@ $(function(){
     })
 
 });
+ */
 
+
+$(function(){
+
+    $('.with-dropdown').on('click',function(){
+        var index = $(this).index();
+        
+        console.log(index);
+        $('.drop-down.active').removeClass('active');
+        $('.drop-down').eq(index).addClass('active');
+        
+    })
+
+});
